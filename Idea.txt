@@ -1,0 +1,4 @@
+Theme: Don't kill anything
+
+Idea:
+A 2D game where you have to get sheeps from one side of the map to the other. On your way there are obstacles which could kill your sheep. Once one sheep dies you lose.
