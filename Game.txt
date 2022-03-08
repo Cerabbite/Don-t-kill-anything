@@ -3,7 +3,7 @@ Theme: Don't kill anything
 Game name: 
 
 Idea:
-A 2D top down game where you have to get sheeps from one side of the map to the other. On your way there are obstacles which could kill your sheep. Once one sheep dies you lose.
+A 2D top down game where you have to get sheeps from one side of the map to the other. On your way there are obstacles which could kill your sheep. Once one sheep dies you lose. If you touch an obstacle you also die and lose.
 You control 4 characters at the same time these 4 characters hold the sheep into one group. If you leave to big of a gap between two characters the sheep(s) will escape.
 
 You control the 4 characters with wasd and you can switch from character using q. The character that is selected will apear a bit larger on screen so you know which character you have selected.
