@@ -9,7 +9,7 @@
 int main()
 {
     // Window
-    sf::RenderWindow window(sf::VideoMode(640,480), "Don't Kill Anything", sf::Style::Titlebar | sf::Style::Close);
+    sf::RenderWindow window(sf::VideoMode(1080,608), "Don't Kill Anything", sf::Style::Titlebar | sf::Style::Close);
     sf::Event ev;
 
     // Game loop
@@ -36,7 +36,6 @@ int main()
         window.clear(sf::Color::Blue); // Clear frame
 
         // Draw
-
 
         window.display(); // Tell SFML that window is done drawing
     }
