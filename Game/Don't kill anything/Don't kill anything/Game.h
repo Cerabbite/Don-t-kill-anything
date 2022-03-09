@@ -17,6 +17,9 @@ private:
 	sf::VideoMode videoMode;
 	sf::Event ev;
 
+	// Mouse positions
+	sf::Vector2i mousePosWindow;
+
 	// Game objects
 	sf::RectangleShape enemy;
 
@@ -35,6 +38,7 @@ public:
 
 	// Functions
 	void pollEvents();
+	void updateMousePositions();
 	void update();
 	void render();
 };
