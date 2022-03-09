@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <vector>
 
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
@@ -21,6 +22,7 @@ private:
 	sf::Vector2i mousePosWindow;
 
 	// Game objects
+	std::vector<sf::RectangleShape> enemies;
 	sf::RectangleShape enemy;
 
 
