@@ -1,43 +1,20 @@
 #include <iostream>
 
-#include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Audio.hpp>
-#include <SFML/Network.hpp>
+#include "Game.h"
 
 int main()
 {
-    // Window
-    sf::RenderWindow window(sf::VideoMode(1080,608), "Don't Kill Anything", sf::Style::Titlebar | sf::Style::Close);
-    sf::Event ev;
+    // Game engine
+    Game game;
 
     // Game loop
-    while (window.isOpen())
+    while (game.running())
     {
-        // Event polling
-        while (window.pollEvent(ev))
-        {
-            switch (ev.type)
-            {
-            case sf::Event::Closed:
-                window.close();
-                break;
-            case sf::Event::KeyPressed:
-                if (ev.key.code == sf::Keyboard::Escape)
-                    window.close();
-                break;
-            }
-        }
-
         // Update
+        game.update();
 
         // Render
-        window.clear(sf::Color::Blue); // Clear frame
-
-        // Draw
-
-        window.display(); // Tell SFML that window is done drawing
+        game.render();
     }
 
     // End game
